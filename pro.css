@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(bk1.jpg) no-repeat center center/cover;
+    height: 1000px;
+}
+
+/* Navbar */
+.navbar{
+   
+   height: 100px;
+}
+
+.navbar ul{
+     display: flex;
+     background-color: rgb(68, 159, 102);
+}
+
+.navbar ul li{
+    list-style: none;
+    padding: 40px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+/* Submenu */
+.sub_menu{
+    display: none;
+    float: right;
+    position: absolute;
+}
+
+.sub_menu ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar ul li:hover a{
+  color: blue;
+}
+
+.navbar ul li:hover .sub_menu{
+   display: block;
+}
+
+/* Submenu2 */
+.sub_menu2{
+    float: right;
+    position: absolute;
+    display: none;
+    margin-left: 70px;
+}
+
+.sub_menu ul li:hover .sub_menu2{
+   display: block;
+}
